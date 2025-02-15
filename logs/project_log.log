@@ -6,3 +6,9 @@
 2025-02-13 19:57:22.456 | INFO     | __main__:execute_sql_file:30 - Executed: C:\Projects\datafun-05-sql\sql_create\03_insert_records.sql
 2025-02-13 19:57:22.457 | INFO     | __main__:main:60 - Database setup completed successfully.
 2025-02-13 19:57:22.457 | INFO     | __main__:main:65 - Database connection closed.
+2025-02-15 07:56:31.404 | INFO     | utils_logger:<module>:41 - Logging to file: logs\project_log.log
+2025-02-15 07:56:31.405 | INFO     | __main__:main:36 - Starting feature queries execution...
+2025-02-15 07:56:31.407 | INFO     | __main__:main:52 - Connected to database: C:\Projects\datafun-05-sql\data\db.sqlite
+2025-02-15 07:56:31.420 | INFO     | __main__:execute_sql_file:27 - Executed: C:\Projects\datafun-05-sql\sql_features\01_new_column_pub_age.sql
+2025-02-15 07:56:31.420 | INFO     | __main__:main:58 - Feature queries execution completed successfully.
+2025-02-15 07:56:31.420 | INFO     | __main__:main:63 - Database connection closed.
