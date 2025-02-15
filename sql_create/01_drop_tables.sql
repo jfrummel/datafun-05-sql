@@ -1,5 +1,5 @@
--- Drop the books table if it exists
-DROP TABLE IF EXISTS books;
+-- Drop the statistics table if it exists
+DROP TABLE IF EXISTS statistics;
 
--- Drop the authors table if it exists
-DROP TABLE IF EXISTS authors;
+-- Drop the playerss table if it exists
+DROP TABLE IF EXISTS players;

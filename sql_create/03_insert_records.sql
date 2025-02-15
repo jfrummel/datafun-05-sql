@@ -1,15 +1,20 @@
--- Insert records into the authors table first
-INSERT INTO authors (author_id, name, birth_year, nationality) VALUES
-    ('AUTHOR_001', 'J.K. Rowling', 1965, 'British'),
-    ('AUTHOR_002', 'George Orwell', 1903, 'British'),
-    ('AUTHOR_003', 'Harper Lee', 1926, 'American');
 
--- Insert records into the books table
--- And include foreign key references to the authors table
+-- Insert records into the players table first
+INSERT INTO players (player_id, name, age, position) VALUES
+    ('PLAYER_001', 'Cole Palmer', 22, 'Midfielder'),
+    ('PLAYER_002', 'Moises Caicedo', 23, 'Midfielder'),
+    ('PLAYER_003', 'Robert Sanchez', 27, 'Goalkeeper'),
+    ('PLAYER_004', 'Marc Cucurella', 26, 'Defender'),
+    ('PLAYER_005', 'Trevoh Chalobah', 25, 'Defender'),
+    ('PLAYER_006', 'Pedro Neto', 25, 'Forward');
+
+-- Insert records into the statistics table
+-- And include foreign key references to the players table
 -- IMPORTANT: No tic marks inside a string, use two single quotes to escape a single quote
-INSERT INTO books (book_id, title, genre, publication_year, author_id) VALUES
-    ('BOOK_001', 'Harry Potter and the Sorcerer''s Stone', 'Fantasy', 1997, 'AUTHOR_001'),
-    ('BOOK_002', 'Harry Potter and the Chamber of Secrets', 'Fantasy', 1998, 'AUTHOR_001'),
-    ('BOOK_003', '1984', 'Dystopian', 1949, 'AUTHOR_002'),
-    ('BOOK_004', 'Animal Farm', 'Political Satire', 1945, 'AUTHOR_002'),
-    ('BOOK_005', 'To Kill a Mockingbird', 'Fiction', 1960, 'AUTHOR_003');
+INSERT INTO statistics(stat_id, appearances, goals, assists, player_id) VALUES
+    ('STAT_001', 77, 36, 18, 'PLAYER_001'),
+    ('STAT_002', 105, 4, 7, 'PLAYER_002'),
+    ('STAT_003', 124, 0, 0, 'PLAYER_003'),
+    ('STAT_004', 103, 3, 6, 'PLAYER_004'),
+    ('STAT_005', 74, 7, 2, 'PLAYER_005'),
+    ('STAT_006', 133, 13, 21, 'PLAYER_006');
